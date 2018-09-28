@@ -1,41 +1,37 @@
-import React, { Component } from 'react';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
 
-const { Component } = React;
-const { connect, Provider } = ReactRedux;
-const { combineReducers, createStore } = Redux;
-
-class ControlPad extends Component{
-  render(){
-    return 
+class ControlPad extends Component {
+  render() {
+    return <div />;
   }
 }
 
-class ToneButton extends Component{
-  render(){
-    return  (
-      <div></div>
-    )
+class ToneButton extends Component {
+  render() {
+    return <div />;
   }
 }
 
-class GameBoard extends Component{
-  render(){
+class GameBoard extends Component {
+  render() {
     return (
-      <div>Hello World</div>
-      <ToneButton />
-      <ToneButton />
-      <ToneButton />
-      <ToneButton />
-      <ControlPad/>
-    ); 
+      <div>
+        <div>Hello World</div>
+        <ToneButton />
+        <ToneButton />
+        <ToneButton />
+        <ToneButton />
+        <ControlPad />
+      </div>
+    );
   }
 }
 
-class Game extends Component{
-  render(){
-    return <GameBoard/>
+class App extends Component {
+  render() {
+    return <GameBoard />;
   }
 }
 
-export default Game;
+export default App;
